@@ -134,20 +134,56 @@ body {
 #header {
 	background-color: var(--bg-white);
 	border-bottom: 1px solid var(--border-light);
+	padding: 1.5rem 2rem;
 }
 
 #header .logo {
 	color: var(--primary-color);
 	font-weight: 700;
+	font-size: 1.5rem;
 	border: none;
+	letter-spacing: 0.02em;
 }
 
 #nav {
 	background-color: var(--bg-white);
 	border-bottom: 1px solid var(--border-light);
-	position: sticky;
-	top: 0;
-	z-index: 1000;
+	position: sticky !important;
+	top: 0 !important;
+	z-index: 10000 !important;
+	padding: 1rem 2rem;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#nav ul.links {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+}
+
+#nav ul.links li {
+	padding: 0;
+}
+
+#nav ul.links li a {
+	color: var(--text-dark);
+	border: none;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 0.75rem 1.25rem;
+	border-radius: 4px;
+	transition: all 0.2s ease;
+	display: block;
+}
+
+#nav ul.links li a:hover {
+	color: var(--primary-color);
+	background-color: var(--bg-light);
+}
+
+/* Hide social icons in nav */
+#nav ul.icons {
+	display: none;
 }
 
 #nav ul.links li a {
