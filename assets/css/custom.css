@@ -1,0 +1,659 @@
+/* =============================================
+   Dr. Dan Kopeliovich - Custom CSS Overrides
+   Premium Medical Website Styling
+   ============================================= */
+
+/* =============================================
+   COLOR PALETTE & VARIABLES
+   ============================================= */
+:root {
+	--primary-color: #1a5276;      /* Deep medical blue */
+	--primary-hover: #154360;      /* Darker blue for hovers */
+	--accent-color: #2980b9;       /* Accent blue */
+	--text-dark: #2c3e50;          /* Primary text */
+	--text-medium: #5d6d7e;        /* Secondary text */
+	--text-light: #7f8c8d;         /* Light text */
+	--bg-white: #ffffff;
+	--bg-light: #f8f9fa;
+	--bg-cream: #fdfcfb;
+	--border-light: #e8e8e8;
+}
+
+/* =============================================
+   GLOBAL OVERRIDES - LIGHT THEME
+   ============================================= */
+body {
+	background-color: var(--bg-white);
+	color: var(--text-dark);
+}
+
+/* Override dark background on intro overlay */
+#intro::before,
+#intro::after {
+	background: transparent;
+}
+
+/* =============================================
+   HERO SECTION (INTRO)
+   ============================================= */
+#intro {
+	background: linear-gradient(135deg, var(--primary-color) 0%, #1a3c5a 100%);
+	color: #ffffff;
+	padding: 8rem 2rem 6rem;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#intro h1 {
+	color: #ffffff;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	text-transform: none;
+	letter-spacing: 0.02em;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+#intro .hero-subtitle {
+	font-size: 1.25rem;
+	margin-bottom: 1.5rem;
+	opacity: 0.95;
+	line-height: 1.8;
+}
+
+#intro .hero-subtitle strong {
+	color: #ffffff;
+	display: block;
+	font-size: 1.1rem;
+	margin-top: 0.5rem;
+	letter-spacing: 0.05em;
+}
+
+#intro .hero-description {
+	max-width: 700px;
+	font-size: 1.1rem;
+	line-height: 1.9;
+	margin-bottom: 2rem;
+	opacity: 0.9;
+}
+
+#intro .actions {
+	margin-bottom: 1.5rem;
+}
+
+#intro .button.primary {
+	background-color: #ffffff;
+	color: var(--primary-color);
+	border: none;
+	padding: 1rem 2.5rem;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	transition: all 0.3s ease;
+}
+
+#intro .button.primary:hover {
+	background-color: var(--bg-light);
+	color: var(--primary-hover);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#intro .hero-small {
+	font-size: 0.95rem;
+	margin-bottom: 0.5rem;
+	opacity: 0.85;
+}
+
+#intro .hero-limited {
+	font-size: 0.85rem;
+	opacity: 0.7;
+	font-style: italic;
+}
+
+/* Responsive hero */
+@media screen and (max-width: 736px) {
+	#intro {
+		padding: 6rem 1.5rem 4rem;
+	}
+	#intro h1 {
+		font-size: 2rem;
+	}
+	#intro .hero-description {
+		font-size: 1rem;
+	}
+}
+
+/* =============================================
+   HEADER & NAVIGATION
+   ============================================= */
+#header {
+	background-color: var(--bg-white);
+	border-bottom: 1px solid var(--border-light);
+}
+
+#header .logo {
+	color: var(--primary-color);
+	font-weight: 700;
+	border: none;
+}
+
+#nav {
+	background-color: var(--bg-white);
+	border-bottom: 1px solid var(--border-light);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+#nav ul.links li a {
+	color: var(--text-dark);
+	border: none;
+	font-weight: 400;
+	transition: color 0.2s ease;
+}
+
+#nav ul.links li a:hover {
+	color: var(--primary-color);
+}
+
+/* =============================================
+   MAIN CONTENT AREA
+   ============================================= */
+#main {
+	background-color: var(--bg-white);
+	padding-top: 0;
+}
+
+/* Section styling */
+section.post {
+	background-color: var(--bg-white);
+	padding: 5rem 3rem;
+	margin: 0;
+	border-bottom: 1px solid var(--border-light);
+}
+
+section.post:nth-child(even) {
+	background-color: var(--bg-light);
+}
+
+/* Headers */
+header.major {
+	border-bottom: none;
+	margin-bottom: 3rem;
+	padding-bottom: 0;
+}
+
+header.major h2 {
+	color: var(--text-dark);
+	font-size: 2rem;
+	text-transform: none;
+	letter-spacing: 0.01em;
+	line-height: 1.3;
+}
+
+header.major p {
+	color: var(--text-medium);
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+/* Credentials badge */
+.credentials {
+	display: block;
+	color: var(--primary-color);
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin-top: 0.5rem;
+	letter-spacing: 0.02em;
+}
+
+/* Paragraph styling */
+section.post p {
+	text-align: left;
+	color: var(--text-dark);
+	line-height: 1.9;
+}
+
+section.post h3 {
+	color: var(--text-dark);
+	font-size: 1.2rem;
+	text-transform: none;
+	letter-spacing: 0.01em;
+	margin-bottom: 1rem;
+}
+
+section.post h4 {
+	color: var(--text-dark);
+	font-size: 1.1rem;
+	text-transform: none;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+/* Lists */
+section.post ul {
+	list-style: disc;
+	padding-left: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+section.post ul li {
+	color: var(--text-dark);
+	margin-bottom: 0.5rem;
+	line-height: 1.8;
+}
+
+/* =============================================
+   ABOUT SECTION - DOCTOR PHOTO
+   ============================================= */
+.doctor-photo {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-photo img {
+	border-radius: 8px;
+}
+
+/* =============================================
+   TREATMENT CARDS
+   ============================================= */
+.treatments-grid {
+	margin-top: 2rem;
+}
+
+.treatment-card {
+	background: var(--bg-white);
+	border: 1px solid var(--border-light);
+	border-radius: 8px;
+	padding: 2rem;
+	text-align: center;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+.treatment-card:hover {
+	box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+	transform: translateY(-4px);
+}
+
+.treatment-card .icon {
+	font-size: 2.5rem;
+	color: var(--primary-color);
+	margin-bottom: 1.5rem;
+	display: block;
+}
+
+.treatment-card h3 {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.treatment-card p {
+	font-size: 0.95rem;
+	text-align: center;
+	color: var(--text-medium);
+	margin-bottom: 0;
+}
+
+/* Treatment section background */
+#treatments {
+	background-color: var(--bg-light);
+}
+
+#treatments .treatment-card {
+	background: var(--bg-white);
+}
+
+/* =============================================
+   PROCESS STEPS
+   ============================================= */
+.process-steps {
+	margin-top: 2rem;
+}
+
+.process-step {
+	text-align: center;
+	padding: 1.5rem;
+}
+
+.step-number {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	background: var(--primary-color);
+	color: #ffffff;
+	font-size: 1.25rem;
+	font-weight: 700;
+	border-radius: 50%;
+	margin-bottom: 1.5rem;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+.process-step h3 {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.process-step p {
+	font-size: 0.95rem;
+	text-align: center;
+	color: var(--text-medium);
+}
+
+/* =============================================
+   CONSULTATION / CTA SECTION
+   ============================================= */
+.cta-section {
+	background: linear-gradient(135deg, var(--primary-color) 0%, #1a3c5a 100%) !important;
+	color: #ffffff;
+}
+
+.cta-section header.major h2 {
+	color: #ffffff;
+}
+
+.cta-section header.major p {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.consultation-benefits {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+	padding: 2rem;
+	margin-bottom: 2.5rem;
+}
+
+.consultation-benefits p {
+	color: #ffffff;
+	margin-bottom: 1rem;
+}
+
+.consultation-benefits ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.consultation-benefits ul li {
+	color: rgba(255, 255, 255, 0.9);
+	padding-left: 1.5rem;
+	position: relative;
+	margin-bottom: 0.75rem;
+}
+
+.consultation-benefits ul li::before {
+	content: "\f00c";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	position: absolute;
+	left: 0;
+	color: #ffffff;
+	font-size: 0.85rem;
+}
+
+/* Qualification Form */
+.qualification-form {
+	background: var(--bg-white);
+	border-radius: 8px;
+	padding: 2.5rem;
+	box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.qualification-form .field {
+	margin-bottom: 1.5rem;
+}
+
+.qualification-form label {
+	color: var(--text-dark);
+	font-weight: 600;
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
+}
+
+.qualification-form select {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	border: 2px solid var(--border-light);
+	border-radius: 6px;
+	font-size: 1rem;
+	color: var(--text-dark);
+	background-color: var(--bg-white);
+	cursor: pointer;
+	transition: border-color 0.2s ease;
+}
+
+.qualification-form select:focus {
+	outline: none;
+	border-color: var(--primary-color);
+}
+
+.qualification-form input[type="submit"] {
+	background: var(--primary-color);
+	color: #ffffff;
+	border: none;
+	padding: 1rem 2rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.qualification-form input[type="submit"]:hover {
+	background: var(--primary-hover);
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(26, 82, 118, 0.3);
+}
+
+.consultation-note {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 0.9rem;
+	text-align: center;
+	margin-top: 1.5rem;
+	font-style: italic;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+#footer {
+	background: var(--bg-light);
+	border-top: 1px solid var(--border-light);
+	padding: 4rem 3rem 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#footer section {
+	padding: 0;
+}
+
+.footer-main {
+	flex: 1;
+	min-width: 280px;
+}
+
+.footer-main h3 {
+	color: var(--text-dark);
+	font-size: 1.25rem;
+	text-transform: none;
+	margin-bottom: 0.5rem;
+}
+
+.footer-main p {
+	color: var(--text-medium);
+	margin-bottom: 1.5rem;
+}
+
+.footer-main .button {
+	background: var(--primary-color);
+	color: #ffffff;
+	border: none;
+}
+
+.footer-main .button:hover {
+	background: var(--primary-hover);
+}
+
+.footer-clinic {
+	text-align: right;
+	flex: 0 0 auto;
+	max-width: 250px;
+}
+
+.clinic-note {
+	color: var(--text-light);
+	font-size: 0.85rem;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+}
+
+.clinic-logo {
+	max-width: 120px;
+	height: auto;
+	opacity: 0.7;
+	transition: opacity 0.3s ease;
+}
+
+.clinic-logo:hover {
+	opacity: 1;
+}
+
+/* Footer responsive */
+@media screen and (max-width: 736px) {
+	#footer {
+		flex-direction: column;
+		text-align: center;
+		padding: 3rem 1.5rem;
+	}
+	.footer-clinic {
+		text-align: center;
+		margin-top: 2rem;
+		max-width: 100%;
+	}
+}
+
+/* =============================================
+   COPYRIGHT
+   ============================================= */
+#copyright {
+	background: var(--bg-light);
+	border-top: 1px solid var(--border-light);
+	padding: 1.5rem;
+}
+
+#copyright ul li {
+	color: var(--text-light);
+}
+
+#copyright a {
+	color: var(--text-medium);
+}
+
+/* =============================================
+   BUTTONS - GLOBAL OVERRIDES
+   ============================================= */
+.button {
+	border-radius: 6px;
+	text-transform: none;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.button.primary {
+	background: var(--primary-color);
+	color: #ffffff;
+}
+
+.button.primary:hover {
+	background: var(--primary-hover);
+}
+
+/* =============================================
+   LINKS
+   ============================================= */
+a {
+	color: var(--primary-color);
+	border-bottom-color: rgba(26, 82, 118, 0.3);
+}
+
+a:hover {
+	color: var(--primary-hover) !important;
+}
+
+/* =============================================
+   RESPONSIVE ADJUSTMENTS
+   ============================================= */
+@media screen and (max-width: 980px) {
+	section.post {
+		padding: 4rem 2rem;
+	}
+
+	header.major h2 {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	section.post {
+		padding: 3rem 1.5rem;
+	}
+
+	header.major h2 {
+		font-size: 1.5rem;
+	}
+
+	.qualification-form {
+		padding: 1.5rem;
+	}
+
+	.consultation-benefits {
+		padding: 1.5rem;
+	}
+}
+
+/* =============================================
+   SMOOTH SCROLLING
+   ============================================= */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Offset for sticky nav */
+section[id] {
+	scroll-margin-top: 80px;
+}
+
+/* =============================================
+   PRINT STYLES
+   ============================================= */
+@media print {
+	#intro {
+		background: #ffffff !important;
+		color: #000000 !important;
+	}
+
+	.cta-section {
+		background: #ffffff !important;
+		color: #000000 !important;
+	}
+
+	.qualification-form {
+		border: 1px solid #000000;
+	}
+}
