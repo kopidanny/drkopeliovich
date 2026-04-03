@@ -1,393 +1,1086 @@
-<!DOCTYPE HTML>
-<!--
-	Dr. Dan Kopeliovich - Dental Implants Cancun
-	Based on Massively by HTML5 UP | html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="en">
-	<head>
-		<title>Dental Implants Cancun | Dr. Dan Kopeliovich Oral & Maxillofacial Surgeon</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Advanced dental implants in Cancun by Dr. Dan Kopeliovich, MD, DMD, a US-trained oral and maxillofacial surgeon focused on full mouth implants and complex implant reconstruction." />
-		<link rel="canonical" href="https://drkopeliovich.com/" />
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+  <meta name="description" content="Dr. Dan Kopeliovich — US-trained Oral & Maxillofacial Surgeon specializing in advanced dental implants and full mouth reconstruction in Cancún, Mexico. MD, DMD.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kopidanny.github.io/drkopeliovich/">
 
-		<!-- Open Graph / Facebook -->
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://drkopeliovich.com/" />
-		<meta property="og:title" content="Dental Implants Cancun | Dr. Dan Kopeliovich Oral & Maxillofacial Surgeon" />
-		<meta property="og:description" content="Advanced dental implants in Cancun by Dr. Dan Kopeliovich, MD, DMD, a US-trained oral and maxillofacial surgeon focused on full mouth implants and complex implant reconstruction." />
-		<!-- UPDATE: Add your social share image -->
-		<meta property="og:image" content="https://drkopeliovich.com/images/og-image.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Advanced Dental Implants Cancún | Dr. Dan Kopeliovich MD, DMD">
+  <meta property="og:description" content="Full mouth dental implants and complex implant reconstruction by a dual-trained US surgeon in Cancún.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kopidanny.github.io/drkopeliovich/">
+  <meta property="og:image" content="https://kopidanny.github.io/drkopeliovich/images/dr-dan.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-		<!-- Twitter -->
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="Dental Implants Cancun | Dr. Dan Kopeliovich Oral & Maxillofacial Surgeon" />
-		<meta name="twitter:description" content="Advanced dental implants in Cancun by Dr. Dan Kopeliovich, MD, DMD, a US-trained oral and maxillofacial surgeon focused on full mouth implants and complex implant reconstruction." />
+  <title>Dental Implants Cancún | Dr. Dan Kopeliovich — Oral & Maxillofacial Surgeon</title>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <!-- Schema.org Physician Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Dan Kopeliovich",
+    "description": "US-trained Oral & Maxillofacial Surgeon specializing in advanced dental implants and full mouth reconstruction in Cancún, Mexico.",
+    "medicalSpecialty": "Oral and Maxillofacial Surgery",
+    "hasCredential": [
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "MD" },
+      { "@type": "EducationalOccupationalCredential", "credentialCategory": "DMD" }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cancún",
+      "addressRegion": "Quintana Roo",
+      "addressCountry": "MX"
+    },
+    "url": "https://kopidanny.github.io/drkopeliovich/"
+  }
+  </script>
 
-		<!-- Wrapper -->
-		<div id="wrapper" class="fade-in">
+  <!-- Fonts: Playfair Display (display) + DM Sans (body) — distinct from mygeldflow -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 
-			<!-- =============================================
-			     SECTION 1: HERO
-			     ============================================= -->
-			<div id="intro">
-				<h1>Advanced Dental Implants<br />in Cancun</h1>
-				<p class="hero-subtitle">By Dr. Dan Kopeliovich, MD, DMD<br />
-				<strong>US-Trained Oral & Maxillofacial Surgeon</strong></p>
-				<p class="hero-description">Full mouth dental implants and complex implant reconstruction performed by a dual-trained physician and dentist with advanced surgical training in the United States.</p>
-				<ul class="actions special">
-					<li><a href="#consultation" class="button primary large scrolly">Get a Free Implant Consultation</a></li>
-				</ul>
-				<p class="hero-small">Answer 3 quick questions to see if you qualify</p>
-				<p class="hero-limited">Limited availability for qualified consultations</p>
-			</div>
+  <style>
+    /* ===== DESIGN TOKENS ===== */
+    :root {
+      --bg:         #0a0f1a;
+      --bg-card:    #0f1623;
+      --bg-panel:   #141d2e;
+      --border:     rgba(99, 160, 180, 0.15);
+      --border-hi:  rgba(99, 160, 180, 0.4);
+      --accent:     #63a0b4;       /* teal-slate — distinct from gold/green */
+      --accent2:    #a8d5e8;
+      --accent-dim: rgba(99, 160, 180, 0.08);
+      --text:       #e8eef2;
+      --text-muted: #7a95a8;
+      --text-dim:   #4a6070;
+      --white:      #ffffff;
+      --danger:     #c8705a;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body:    'DM Sans', system-ui, sans-serif;
+      --radius:     4px;
+      --radius-lg:  10px;
+      --shadow:     0 4px 32px rgba(0,0,0,0.35);
+      --shadow-card:0 2px 20px rgba(0,0,0,0.4);
+    }
 
-			<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo">Dr. Kopeliovich</a>
-			</header>
+    /* ===== RESET ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--accent); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--accent2); }
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul class="links">
-					<li><a href="#why-cancun" class="scrolly">Why Cancun</a></li>
-					<li><a href="#about" class="scrolly">About</a></li>
-					<li><a href="#treatments" class="scrolly">Treatments</a></li>
-					<li><a href="#process" class="scrolly">Process</a></li>
-					<li><a href="#consultation" class="scrolly">Free Consultation</a></li>
-				</ul>
-			</nav>
+    /* ===== LAYOUT ===== */
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 80px 0; }
+    .section-sm { padding: 56px 0; }
 
-			<!-- Main -->
-			<div id="main">
+    /* ===== NAV ===== */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(10, 15, 26, 0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      transition: background .3s;
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px; max-width: 1100px; margin: 0 auto; padding: 0 24px;
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--accent2); }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--bg) !important;
+      padding: 9px 20px;
+      border-radius: var(--radius);
+      font-weight: 600 !important;
+      font-size: 0.78rem !important;
+      letter-spacing: 0.06em !important;
+      transition: background .2s, transform .15s !important;
+    }
+    .nav-cta:hover { background: var(--accent2) !important; transform: translateY(-1px); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+    .hamburger span { width: 22px; height: 1.5px; background: var(--text); transition: all .3s; }
+    .mobile-menu {
+      display: none; position: fixed; top: 64px; left: 0; right: 0;
+      background: var(--bg-card); border-bottom: 1px solid var(--border);
+      padding: 20px 24px; z-index: 99;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu ul { list-style: none; display: flex; flex-direction: column; gap: 16px; }
+    .mobile-menu a { font-size: 0.9rem; color: var(--text); }
 
-				<!-- =============================================
-				     SECTION 2: WHY PATIENTS CHOOSE CANCUN
-				     ============================================= -->
-				<section id="why-cancun" class="post">
-					<header class="major">
-						<h2>Why Patients Choose Cancun<br />for Advanced Implant Treatment</h2>
-					</header>
-					<p>Patients from the United States and Canada are increasingly traveling to Cancun for advanced dental implant treatment. The reasons are straightforward: access to specialized surgical care at a fraction of the cost, without compromising on quality or safety.</p>
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      padding-top: 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 40%, rgba(99,160,180,0.07) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(99,160,180,0.04) 0%, transparent 60%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.03;
+      background-image:
+        linear-gradient(var(--border-hi) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border-hi) 1px, transparent 1px);
+      background-size: 80px 80px;
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 420px; gap: 64px; align-items: center;
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--accent-dim); border: 1px solid var(--border-hi);
+      color: var(--accent); padding: 6px 14px; border-radius: 20px;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 28px;
+      animation: fadeUp .6s ease both;
+    }
+    .hero-badge::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+    .hero-h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      font-weight: 700;
+      line-height: 1.18;
+      color: var(--white);
+      margin-bottom: 10px;
+      animation: fadeUp .6s .1s ease both;
+    }
+    .hero-h1 em { font-style: italic; color: var(--accent); }
+    .hero-byline {
+      font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 24px;
+      animation: fadeUp .6s .15s ease both;
+    }
+    .hero-lead {
+      font-size: 1.05rem; color: var(--text-muted); line-height: 1.75;
+      max-width: 520px; margin-bottom: 36px;
+      animation: fadeUp .6s .2s ease both;
+    }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; animation: fadeUp .6s .25s ease both; }
+    .btn-primary {
+      background: var(--accent); color: var(--bg);
+      padding: 14px 28px; border-radius: var(--radius);
+      font-weight: 600; font-size: 0.88rem; letter-spacing: 0.04em;
+      border: none; cursor: pointer;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(99,160,180,0.3); color: var(--bg); }
+    .btn-ghost {
+      background: transparent; color: var(--text);
+      padding: 13px 28px; border-radius: var(--radius);
+      font-weight: 400; font-size: 0.88rem;
+      border: 1px solid var(--border-hi); cursor: pointer;
+      transition: border-color .2s, color .2s, transform .15s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+    .hero-note {
+      margin-top: 16px; font-size: 0.76rem; color: var(--text-dim);
+      animation: fadeUp .6s .3s ease both;
+    }
+    .hero-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      animation: fadeUp .7s .2s ease both;
+      box-shadow: var(--shadow);
+    }
+    .hero-card img {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center top;
+    }
+    .hero-card-body { padding: 22px 24px; }
+    .hero-card-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem; font-weight: 600; color: var(--white); margin-bottom: 4px;
+    }
+    .hero-card-title { font-size: 0.8rem; color: var(--accent); letter-spacing: 0.05em; margin-bottom: 16px; }
+    .credential-list { display: flex; flex-direction: column; gap: 8px; }
+    .cred-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.8rem; color: var(--text-muted);
+    }
+    .cred-item::before {
+      content: '';
+      width: 18px; height: 18px; flex-shrink: 0;
+      border-radius: 50%; border: 1.5px solid var(--accent);
+      background: var(--accent-dim);
+    }
 
-					<div class="row gtr-uniform">
-						<div class="col-6 col-12-small">
-							<h3>Significant Savings</h3>
-							<p>Full mouth implant treatment in the US or Canada can cost upward of $50,000 to $90,000. In Cancun, comparable treatment by a qualified surgeon is available at substantially lower rates, making advanced care accessible to more patients.</p>
-						</div>
-						<div class="col-6 col-12-small">
-							<h3>Access to Specialists</h3>
-							<p>Cancun has become a destination for patients seeking specialists in complex implant cases. The key is choosing a surgeon with the right training and experience to handle advanced procedures.</p>
-						</div>
-						<div class="col-6 col-12-small">
-							<h3>Convenient Travel</h3>
-							<p>Cancun is easily accessible with direct flights from most major US and Canadian cities. The modern international airport and established medical infrastructure make it a practical choice for treatment abroad.</p>
-						</div>
-						<div class="col-6 col-12-small">
-							<h3>Choosing the Right Surgeon</h3>
-							<p>The most important factor is not where you receive treatment, but who performs it. Advanced implant cases require a surgeon with specialized training in bone, anatomy, and reconstruction.</p>
-						</div>
-					</div>
-				</section>
+    /* ===== STATS STRIP ===== */
+    .stats-strip {
+      background: var(--bg-panel);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 0;
+    }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+    .stat-item {
+      text-align: center; padding: 0 20px;
+      border-right: 1px solid var(--border);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem; font-weight: 700; color: var(--accent); display: block;
+    }
+    .stat-label { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.08em; }
 
-				<!-- =============================================
-				     SECTION 3: MEET DR. DAN KOPELIOVICH
-				     ============================================= -->
-				<section id="about" class="post">
-					<header class="major">
-						<h2>Meet Dr. Dan Kopeliovich</h2>
-						<span class="credentials">MD, DMD | Oral & Maxillofacial Surgeon</span>
-					</header>
+    /* ===== SECTION HEADINGS ===== */
+    .section-label {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 12px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-label::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+    .section-h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700; color: var(--white);
+      line-height: 1.25; margin-bottom: 16px;
+    }
+    .section-h2 em { font-style: italic; color: var(--accent); }
+    .section-lead { font-size: 1rem; color: var(--text-muted); max-width: 560px; line-height: 1.75; }
 
-					<div class="row gtr-uniform aln-center">
-						<div class="col-4 col-12-medium">
-							<!-- INSERT YOUR MAIN PHOTO: images/dr-dan.jpg -->
-							<span class="image fit doctor-photo"><img src="images/dr-dan.jpg" alt="Dr. Dan Kopeliovich, MD, DMD - Oral and Maxillofacial Surgeon" /></span>
-						</div>
-						<div class="col-8 col-12-medium">
-							<p>Dr. Dan Kopeliovich is an Oral & Maxillofacial Surgeon with advanced training in the United States. He holds both medical (MD) and dental (DMD) degrees, providing the comprehensive perspective that complex implant cases require.</p>
+    /* ===== WHY CANCUN ===== */
+    #why-cancun { background: var(--bg); }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 48px; }
+    .why-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px;
+      transition: border-color .2s, transform .2s;
+    }
+    .why-card:hover { border-color: var(--border-hi); transform: translateY(-3px); }
+    .why-card-icon {
+      width: 42px; height: 42px; background: var(--accent-dim);
+      border: 1px solid var(--border-hi); border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 16px; font-size: 1.2rem;
+    }
+    .why-card h3 {
+      font-family: var(--font-display); font-size: 1.1rem; font-weight: 600;
+      color: var(--white); margin-bottom: 10px;
+    }
+    .why-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; }
 
-							<p>His training includes fellowship-level experience in head and neck surgery and microvascular reconstruction, disciplines that develop the anatomical knowledge and surgical precision essential for advanced implant procedures.</p>
+    /* ===== ABOUT ===== */
+    #about { background: var(--bg-panel); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .about-grid { display: grid; grid-template-columns: 340px 1fr; gap: 64px; align-items: start; }
+    .about-img-wrap {
+      position: relative;
+    }
+    .about-img-wrap img {
+      width: 100%; border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .about-img-accent {
+      position: absolute; top: -12px; left: -12px; right: 12px; bottom: 12px;
+      border: 1px solid var(--border-hi); border-radius: var(--radius-lg);
+      pointer-events: none;
+    }
+    .credential-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .tag {
+      background: var(--accent-dim); border: 1px solid var(--border-hi);
+      color: var(--accent); padding: 5px 12px; border-radius: 20px;
+      font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em;
+    }
+    .about-text p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+    .training-list { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+    .training-item {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 14px 18px; background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: var(--radius);
+    }
+    .training-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+      flex-shrink: 0; margin-top: 6px;
+    }
+    .training-item span { font-size: 0.86rem; color: var(--text); }
 
-							<p>Dr. Kopeliovich's clinical focus is on patients who need more than routine implant placement: those requiring full mouth reconstruction, complex bone grafting, or revision of previous implant work. His surgical background allows him to approach these cases with the planning and technical capability they demand.</p>
+    /* ===== TREATMENTS ===== */
+    #treatments { background: var(--bg); }
+    .treatments-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 48px; }
+    .treatment-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 30px 26px;
+      transition: border-color .25s, box-shadow .25s, transform .25s;
+      position: relative; overflow: hidden;
+    }
+    .treatment-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0; transition: opacity .25s;
+    }
+    .treatment-card:hover { border-color: var(--border-hi); box-shadow: var(--shadow-card); transform: translateY(-4px); }
+    .treatment-card:hover::before { opacity: 1; }
+    .tc-num {
+      font-family: var(--font-display); font-size: 2.5rem; font-weight: 700;
+      color: var(--border-hi); position: absolute; top: 18px; right: 24px;
+      line-height: 1;
+    }
+    .tc-title {
+      font-family: var(--font-display); font-size: 1.05rem; font-weight: 600;
+      color: var(--white); margin-bottom: 12px; line-height: 1.3;
+    }
+    .tc-body { font-size: 0.85rem; color: var(--text-muted); line-height: 1.7; }
 
-							<h4>Training & Background</h4>
-							<ul>
-								<li>Dual-degree: MD and DMD</li>
-								<li>Advanced surgical training in the United States</li>
-								<li>Fellowship-level experience in head and neck surgery</li>
-								<li>Specialized training in microvascular reconstruction</li>
-								<!-- NOTE: If specific institution names are available, replace bracketed text -->
-								<!-- <li>Residency: [Institution Name]</li> -->
-							</ul>
-						</div>
-					</div>
-				</section>
+    /* ===== WHY OMS ===== */
+    #why-oms { background: var(--bg-panel); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .oms-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 48px; }
+    .oms-list { display: flex; flex-direction: column; gap: 16px; }
+    .oms-item {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 18px 20px; background: var(--bg-card);
+      border: 1px solid var(--border); border-radius: var(--radius);
+    }
+    .oms-icon { font-size: 1.3rem; flex-shrink: 0; line-height: 1; margin-top: 2px; }
+    .oms-item h4 { font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 4px; }
+    .oms-item p { font-size: 0.82rem; color: var(--text-muted); line-height: 1.65; }
+    .oms-callout {
+      background: var(--bg-card); border: 1px solid var(--border-hi);
+      border-radius: var(--radius-lg); padding: 36px;
+    }
+    .oms-callout blockquote {
+      font-family: var(--font-display); font-style: italic;
+      font-size: 1.1rem; color: var(--text); line-height: 1.65;
+      border-left: 3px solid var(--accent); padding-left: 20px;
+    }
 
-				<!-- =============================================
-				     SECTION 4: TREATMENT FOCUS
-				     ============================================= -->
-				<section id="treatments" class="post">
-					<header class="major">
-						<h2>Treatment Focus</h2>
-						<p>Dr. Kopeliovich's practice is focused exclusively on advanced implant procedures and complex reconstruction.</p>
-					</header>
+    /* ===== PROCESS ===== */
+    #process { background: var(--bg); }
+    .process-steps { margin-top: 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; position: relative; }
+    .process-steps::before {
+      content: '';
+      position: absolute; top: 28px; left: 10%; right: 10%;
+      height: 1px; background: linear-gradient(90deg, var(--border), var(--border-hi), var(--border));
+    }
+    .process-step { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 16px; }
+    .step-circle {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--bg-card); border: 2px solid var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-size: 1.2rem; font-weight: 700;
+      color: var(--accent); margin-bottom: 20px; position: relative; z-index: 1;
+      transition: background .25s;
+    }
+    .process-step:hover .step-circle { background: var(--accent-dim); }
+    .step-title { font-size: 0.9rem; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+    .step-body { font-size: 0.82rem; color: var(--text-muted); line-height: 1.65; }
 
-					<div class="row gtr-uniform treatments-grid">
-						<div class="col-4 col-12-medium">
-							<div class="treatment-card">
-								<span class="icon solid fa-teeth"></span>
-								<h3>Full Mouth Dental Implants</h3>
-								<p>Complete arch replacement for patients who have lost most or all of their teeth. This involves strategic implant placement and comprehensive prosthetic planning to restore full dental function.</p>
-							</div>
-						</div>
-						<div class="col-4 col-12-medium">
-							<div class="treatment-card">
-								<span class="icon solid fa-layer-group"></span>
-								<h3>All-on-4 / All-on-6</h3>
-								<p>Fixed prosthetic solutions that use four to six implants to support a complete arch of teeth. These protocols can often be completed with reduced surgical time and immediate provisional teeth.</p>
-							</div>
-						</div>
-						<div class="col-4 col-12-medium">
-							<div class="treatment-card">
-								<span class="icon solid fa-tools"></span>
-								<h3>Complex Implant Reconstruction</h3>
-								<p>Surgical treatment for challenging cases including failed previous implants, severe bone loss, or anatomical complications requiring specialized surgical expertise.</p>
-							</div>
-						</div>
-						<div class="col-4 col-12-medium">
-							<div class="treatment-card">
-								<span class="icon solid fa-bone"></span>
-								<h3>Bone Grafting</h3>
-								<p>Procedures to rebuild jawbone structure lost due to tooth extraction, disease, or trauma. Adequate bone volume is essential for successful long-term implant outcomes.</p>
-							</div>
-						</div>
-						<div class="col-4 col-12-medium">
-							<div class="treatment-card">
-								<span class="icon solid fa-clipboard-check"></span>
-								<h3>Second Opinions</h3>
-								<p>Independent evaluation of existing treatment plans or assessment of cases that have been deemed too complex. A fresh perspective from a surgical specialist can clarify options.</p>
-							</div>
-						</div>
-					</div>
-				</section>
+    /* ===== CONSULTATION FORM ===== */
+    #consultation { background: var(--bg-panel); border-top: 1px solid var(--border); }
+    .consult-grid { display: grid; grid-template-columns: 1fr 480px; gap: 64px; align-items: start; }
+    .consult-info ul { list-style: none; margin-top: 28px; display: flex; flex-direction: column; gap: 14px; }
+    .consult-info li {
+      display: flex; gap: 12px; align-items: flex-start;
+      font-size: 0.88rem; color: var(--text-muted);
+    }
+    .consult-info li::before { content: '→'; color: var(--accent); flex-shrink: 0; }
+    .form-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 36px;
+    }
+    .form-title {
+      font-family: var(--font-display); font-size: 1.2rem; font-weight: 600;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .form-sub { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 28px; }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block; font-size: 0.78rem; font-weight: 500;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--text-muted); margin-bottom: 8px;
+    }
+    .form-group select,
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: var(--bg-panel); border: 1px solid var(--border);
+      border-radius: var(--radius); color: var(--text);
+      padding: 11px 14px; font-family: var(--font-body); font-size: 0.88rem;
+      transition: border-color .2s, background .2s;
+      appearance: none; -webkit-appearance: none;
+    }
+    .form-group select:focus,
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none; border-color: var(--accent); background: rgba(99,160,180,0.05);
+    }
+    .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2363a0b4' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .form-submit {
+      width: 100%; background: var(--accent); color: var(--bg);
+      border: none; border-radius: var(--radius);
+      padding: 14px; font-family: var(--font-body);
+      font-weight: 600; font-size: 0.9rem; letter-spacing: 0.04em;
+      cursor: pointer; transition: background .2s, transform .15s;
+      margin-top: 8px;
+    }
+    .form-submit:hover { background: var(--accent2); transform: translateY(-2px); }
+    .form-note { font-size: 0.74rem; color: var(--text-dim); text-align: center; margin-top: 12px; }
+    .form-success {
+      display: none; text-align: center; padding: 24px;
+      color: var(--accent); font-size: 0.9rem;
+    }
 
-				<!-- =============================================
-				     SECTION 5: WHY CHOOSE AN ORAL & MAXILLOFACIAL SURGEON
-				     ============================================= -->
-				<section id="why-surgeon" class="post">
-					<header class="major">
-						<h2>Why Choose an Oral &<br />Maxillofacial Surgeon</h2>
-					</header>
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--bg); border-top: 1px solid var(--border);
+      padding: 48px 0 24px;
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px;
+      margin-bottom: 40px;
+    }
+    .footer-brand-name {
+      font-family: var(--font-display); font-size: 1.2rem;
+      font-weight: 600; color: var(--white); margin-bottom: 10px;
+    }
+    .footer-brand-sub { font-size: 0.8rem; color: var(--text-muted); line-height: 1.65; max-width: 260px; }
+    .footer-col h4 {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col li a { font-size: 0.84rem; color: var(--text-dim); transition: color .2s; }
+    .footer-col li a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: 0.76rem; color: var(--text-dim); }
+    .footer-bottom a { color: var(--text-dim); }
+    .footer-bottom a:hover { color: var(--accent); }
 
-					<p>Dental implant placement is a surgical procedure. While many practitioners offer implant services, the complexity of your case determines what level of training is appropriate for your surgeon.</p>
+    /* ===== PRIVACY NOTICE (AVISO DE PRIVACIDAD — LFPDPPP COMPLIANCE) ===== */
+    .privacy-banner {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 200;
+      background: var(--bg-card); border-top: 1px solid var(--border-hi);
+      padding: 16px 24px;
+      display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.4);
+    }
+    .privacy-banner p { font-size: 0.8rem; color: var(--text-muted); flex: 1; min-width: 240px; line-height: 1.5; }
+    .privacy-banner a { color: var(--accent); }
+    .pb-accept {
+      background: var(--accent); color: var(--bg);
+      padding: 9px 20px; border-radius: var(--radius);
+      border: none; cursor: pointer;
+      font-family: var(--font-body); font-weight: 600; font-size: 0.8rem;
+      transition: background .2s; white-space: nowrap;
+    }
+    .pb-accept:hover { background: var(--accent2); }
+    .pb-decline {
+      background: transparent; color: var(--text-muted);
+      padding: 9px 16px; border-radius: var(--radius);
+      border: 1px solid var(--border); cursor: pointer;
+      font-family: var(--font-body); font-size: 0.8rem;
+      transition: border-color .2s; white-space: nowrap;
+    }
+    .pb-decline:hover { border-color: var(--border-hi); }
 
-					<div class="row gtr-uniform">
-						<div class="col-6 col-12-medium">
-							<h3>Surgical Training in Bone and Anatomy</h3>
-							<p>Oral and maxillofacial surgeons complete years of hospital-based surgical residency focused specifically on the bones, nerves, and tissues of the face and jaws. This training develops a detailed understanding of the anatomical structures that must be navigated during implant surgery.</p>
-						</div>
-						<div class="col-6 col-12-medium">
-							<h3>Managing Complex Cases</h3>
-							<p>Advanced implant cases often involve insufficient bone, proximity to critical nerves or sinuses, or the need to coordinate multiple surgical procedures. These cases require surgical planning and execution that draws on specialized training.</p>
-						</div>
-						<div class="col-6 col-12-medium">
-							<h3>Handling Complications</h3>
-							<p>Surgical complications, while uncommon, do occur. A surgeon trained to manage complex anatomical situations is better prepared to address unexpected findings and minimize risk during procedures.</p>
-						</div>
-						<div class="col-6 col-12-medium">
-							<h3>Reconstruction-Oriented Thinking</h3>
-							<p>Rather than simply placing implants, a reconstructive approach considers the long-term function and stability of the entire jaw structure. This perspective is especially important for patients with significant bone loss or previous treatment failures.</p>
-						</div>
-					</div>
+    /* ===== HEALTH DISCLAIMER (NOM/SSA COMPLIANCE) ===== */
+    .health-disclaimer {
+      background: rgba(99,160,180,0.04); border-top: 1px solid var(--border);
+      padding: 16px 24px; text-align: center;
+    }
+    .health-disclaimer p {
+      font-size: 0.74rem; color: var(--text-dim); line-height: 1.6; max-width: 800px; margin: 0 auto;
+    }
 
-					<p class="align-center" style="margin-top: 2rem;"><em>For straightforward implant cases, many qualified practitioners can provide excellent care. For complex cases, the additional surgical training of an oral and maxillofacial surgeon can make a meaningful difference in outcomes.</em></p>
-				</section>
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
 
-				<!-- =============================================
-				     SECTION 6: HOW TREATMENT WORKS
-				     ============================================= -->
-				<section id="process" class="post">
-					<header class="major">
-						<h2>How Treatment Works<br />for International Patients</h2>
-						<p>A clear, practical process designed for patients traveling from the US and Canada.</p>
-					</header>
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-card { max-width: 360px; }
+      .about-grid { grid-template-columns: 1fr; }
+      .about-img-wrap { max-width: 300px; }
+      .treatments-grid { grid-template-columns: 1fr 1fr; }
+      .consult-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .oms-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 680px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .why-grid { grid-template-columns: 1fr; }
+      .treatments-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .stat-item:nth-child(2) { border-right: none; }
+      .stat-item:nth-child(3) { border-right: 1px solid var(--border); border-top: 1px solid var(--border); }
+      .stat-item:nth-child(4) { border-top: 1px solid var(--border); }
+      .process-steps { grid-template-columns: 1fr 1fr; }
+      .process-steps::before { display: none; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
 
-					<div class="row gtr-uniform process-steps">
-						<div class="col-3 col-6-medium col-12-small">
-							<div class="process-step">
-								<span class="step-number">1</span>
-								<h3>Online Evaluation</h3>
-								<p>Submit your case information and any existing records for review. Dr. Kopeliovich will assess your situation and discuss whether you're a candidate for treatment, along with preliminary options and estimated costs.</p>
-							</div>
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
-							<div class="process-step">
-								<span class="step-number">2</span>
-								<h3>Travel to Cancun</h3>
-								<p>Once a treatment plan is confirmed, you'll coordinate your travel dates. Most patients arrange a stay of 3-10 days depending on their specific procedure. We can provide guidance on accommodations and logistics.</p>
-							</div>
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
-							<div class="process-step">
-								<span class="step-number">3</span>
-								<h3>Procedure & Treatment</h3>
-								<p>Your surgical procedure is performed at an affiliated private dental clinic in Cancun. Dr. Kopeliovich will walk you through each step and ensure you understand your post-operative care before you leave.</p>
-							</div>
-						</div>
-						<div class="col-3 col-6-medium col-12-small">
-							<div class="process-step">
-								<span class="step-number">4</span>
-								<h3>Healing & Follow-Up</h3>
-								<p>Most patients return home within days of their procedure. Dr. Kopeliovich remains available for remote follow-up questions. Some cases may require a second visit for final prosthetic work.</p>
-							</div>
-						</div>
-					</div>
-				</section>
+<!-- ===== NAV ===== -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Dr. Dan Kopeliovich — Home">Dr. <span>Kopeliovich</span></a>
+    <ul class="nav-links">
+      <li><a href="#why-cancun">Why Cancún</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#consultation" class="nav-cta">Free Consultation</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
 
-				<!-- =============================================
-				     SECTION 7: QUALIFICATION FORM + FREE CONSULTATION CTA
-				     ============================================= -->
-				<section id="consultation" class="post cta-section">
-					<header class="major">
-						<h2>Free Implant Consultation</h2>
-						<p>This complimentary consultation is intended for patients considering dental implants, full mouth reconstruction, or complex implant treatment in Cancun.</p>
-					</header>
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <ul>
+    <li><a href="#why-cancun">Why Cancún</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#treatments">Treatments</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#consultation" class="btn-primary" style="padding:10px 20px;border-radius:4px;font-size:.85rem">Free Consultation</a></li>
+  </ul>
+</div>
 
-					<div class="row gtr-uniform aln-center">
-						<div class="col-8 col-12-medium">
-							<div class="consultation-benefits">
-								<p>During your consultation, Dr. Kopeliovich will:</p>
-								<ul>
-									<li>Review your case and any existing imaging or treatment plans</li>
-									<li>Discuss treatment options appropriate for your situation</li>
-									<li>Explain the travel and treatment process</li>
-									<li>Answer your questions directly</li>
-								</ul>
-							</div>
+<!-- ===== HERO ===== -->
+<section id="hero" aria-labelledby="hero-h1">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge" aria-label="Location">Cancún, Mexico</div>
+      <h1 class="hero-h1" id="hero-h1">
+        Advanced Dental<br>
+        Implants in<br>
+        <em>Cancún</em>
+      </h1>
+      <p class="hero-byline">Dr. Dan Kopeliovich, MD, DMD · US-Trained Oral & Maxillofacial Surgeon</p>
+      <p class="hero-lead">
+        Full mouth dental implants and complex implant reconstruction performed by a dual-trained physician and dentist with advanced surgical training in the United States.
+      </p>
+      <div class="hero-actions">
+        <a href="#consultation" class="btn-primary">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M8 12h8M8 8h5M5 4h14a1 1 0 011 1v10a1 1 0 01-1 1H8l-4 4V5a1 1 0 011-1z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Free Consultation
+        </a>
+        <a href="#about" class="btn-ghost">
+          Meet Dr. Kopeliovich
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <p class="hero-note">Answer 3 quick questions to see if you qualify · Limited availability</p>
+    </div>
+    <div class="hero-card">
+      <img src="https://kopidanny.github.io/drkopeliovich/images/dr-dan.jpg"
+           alt="Dr. Dan Kopeliovich, MD, DMD — Oral and Maxillofacial Surgeon, Cancún Mexico"
+           width="420" height="525" loading="eager">
+      <div class="hero-card-body">
+        <p class="hero-card-name">Dr. Dan Kopeliovich</p>
+        <p class="hero-card-title">MD, DMD · Oral & Maxillofacial Surgeon</p>
+        <div class="credential-list">
+          <div class="cred-item">Dual MD &amp; DMD degrees</div>
+          <div class="cred-item">US advanced surgical training</div>
+          <div class="cred-item">Head &amp; neck surgery fellowship</div>
+          <div class="cred-item">Microvascular reconstruction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-							<form id="qualification-form" class="qualification-form">
-								<div class="fields">
-									<div class="field">
-										<label for="treatment-interest">What treatment are you interested in?</label>
-										<select name="treatment-interest" id="treatment-interest" required>
-											<option value="">Select an option...</option>
-											<option value="full-mouth">Full mouth dental implants</option>
-											<option value="multiple">Multiple implants</option>
-											<option value="reconstruction">Implant reconstruction / complex case</option>
-											<option value="second-opinion">Second opinion</option>
-											<option value="not-sure">Not sure yet</option>
-										</select>
-									</div>
-									<div class="field">
-										<label for="prior-evaluation">Have you already been evaluated by a dentist?</label>
-										<select name="prior-evaluation" id="prior-evaluation" required>
-											<option value="">Select an option...</option>
-											<option value="yes-plan">Yes, I already have a treatment plan</option>
-											<option value="yes-second">Yes, but I want a second opinion</option>
-											<option value="no">No, not yet</option>
-										</select>
-									</div>
-									<div class="field">
-										<label for="timeline">When are you considering treatment?</label>
-										<select name="timeline" id="timeline" required>
-											<option value="">Select an option...</option>
-											<option value="1-month">Within 1 month</option>
-											<option value="1-3-months">1-3 months</option>
-											<option value="3-6-months">3-6 months</option>
-											<option value="researching">Just researching</option>
-										</select>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" value="Schedule Your Free Consultation" class="primary large" /></li>
-								</ul>
-							</form>
+<!-- ===== STATS ===== -->
+<div class="stats-strip" role="region" aria-label="Key statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-num">MD+DMD</span>
+        <span class="stat-label">Dual Degrees</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">US</span>
+        <span class="stat-label">Advanced Training</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">70%</span>
+        <span class="stat-label">vs US Cost</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3–10</span>
+        <span class="stat-label">Days Treatment</span>
+      </div>
+    </div>
+  </div>
+</div>
 
-							<p class="consultation-note">After submitting, you will be directed to schedule a time that works for you.</p>
-						</div>
-					</div>
-				</section>
+<!-- ===== WHY CANCUN ===== -->
+<section id="why-cancun" class="section" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-label">Why Cancún</div>
+    <h2 class="section-h2" id="why-heading">Why Patients Choose<br><em>Cancún</em> for Advanced Implants</h2>
+    <p class="section-lead">
+      Patients from the US and Canada increasingly travel to Cancún for specialized surgical care at a fraction of the cost — without compromising on quality or safety.
+    </p>
+    <div class="why-grid">
+      <article class="why-card reveal">
+        <div class="why-card-icon" aria-hidden="true">💰</div>
+        <h3>Significant Savings</h3>
+        <p>Full mouth implant treatment in the US or Canada can cost $50,000–$90,000. In Cancún, comparable care by a qualified surgeon is available at substantially lower rates, making advanced surgery accessible to more patients.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card-icon" aria-hidden="true">🎓</div>
+        <h3>Access to Specialists</h3>
+        <p>Cancún has become a destination for patients seeking specialists in complex implant cases. The critical factor is choosing a surgeon with the right training and experience to handle advanced procedures.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card-icon" aria-hidden="true">✈️</div>
+        <h3>Convenient Travel</h3>
+        <p>Cancún is easily accessible with direct flights from most major US and Canadian cities. The modern international airport and established medical infrastructure make it a practical choice for treatment abroad.</p>
+      </article>
+      <article class="why-card reveal">
+        <div class="why-card-icon" aria-hidden="true">🔬</div>
+        <h3>Choosing the Right Surgeon</h3>
+        <p>The most important factor is not where you receive treatment, but who performs it. Advanced implant cases require a surgeon with specialized training in bone, anatomy, and reconstruction — not just implant placement.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-			</div>
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-accent" aria-hidden="true"></div>
+        <img src="https://kopidanny.github.io/drkopeliovich/images/dr-dan.jpg"
+             alt="Dr. Dan Kopeliovich MD DMD Oral and Maxillofacial Surgeon"
+             width="340" height="430" loading="lazy">
+        <div class="credential-tags">
+          <span class="tag">MD</span>
+          <span class="tag">DMD</span>
+          <span class="tag">OMS Specialist</span>
+          <span class="tag">US Training</span>
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <div class="section-label">About</div>
+        <h2 class="section-h2" id="about-heading">Meet<br><em>Dr. Dan Kopeliovich</em></h2>
+        <p>Dr. Dan Kopeliovich is an Oral &amp; Maxillofacial Surgeon with advanced training in the United States. He holds both medical (MD) and dental (DMD) degrees, providing the comprehensive perspective that complex implant cases require.</p>
+        <p>His training includes fellowship-level experience in head and neck surgery and microvascular reconstruction — disciplines that develop the anatomical knowledge and surgical precision essential for advanced implant procedures.</p>
+        <p>Dr. Kopeliovich's clinical focus is on patients who need more than routine implant placement: those requiring full mouth reconstruction, complex bone grafting, or revision of previous implant work.</p>
+        <div class="training-list">
+          <div class="training-item"><div class="training-dot" aria-hidden="true"></div><span>Dual-degree: MD and DMD</span></div>
+          <div class="training-item"><div class="training-dot" aria-hidden="true"></div><span>Advanced surgical training in the United States</span></div>
+          <div class="training-item"><div class="training-dot" aria-hidden="true"></div><span>Fellowship-level experience in head and neck surgery</span></div>
+          <div class="training-item"><div class="training-dot" aria-hidden="true"></div><span>Specialized training in microvascular reconstruction</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<!-- =============================================
-			     SECTION 8: FOOTER WITH CLINICAL AFFILIATION
-			     ============================================= -->
-			<footer id="footer">
-				<section class="footer-main">
-					<h3>Dr. Dan Kopeliovich, MD, DMD</h3>
-					<p>Oral & Maxillofacial Surgeon<br />
-					Advanced Dental Implants in Cancun</p>
-					<ul class="actions">
-						<li><a href="#consultation" class="button scrolly">Get a Free Consultation</a></li>
-					</ul>
-				</section>
-				<section class="footer-clinic">
-					<p class="clinic-note">Clinical procedures are performed at an affiliated private dental clinic in Cancun.</p>
-					<!-- INSERT CLINIC LOGO: images/shtern-logo.png -->
-					<img src="images/shtern-logo.png" alt="Affiliated Clinic" class="clinic-logo" />
-				</section>
-			</footer>
+<!-- ===== TREATMENTS ===== -->
+<section id="treatments" class="section" aria-labelledby="treatments-heading">
+  <div class="container">
+    <div class="section-label">Treatment Focus</div>
+    <h2 class="section-h2" id="treatments-heading">Exclusively<br><em>Advanced Procedures</em></h2>
+    <p class="section-lead">Dr. Kopeliovich's practice is focused exclusively on advanced implant procedures and complex reconstruction — not routine implant placement.</p>
+    <div class="treatments-grid">
+      <article class="treatment-card reveal">
+        <span class="tc-num" aria-hidden="true">01</span>
+        <h3 class="tc-title">Full Mouth Dental Implants</h3>
+        <p class="tc-body">Complete arch replacement for patients who have lost most or all of their teeth. Strategic implant placement and comprehensive prosthetic planning to restore full dental function.</p>
+      </article>
+      <article class="treatment-card reveal">
+        <span class="tc-num" aria-hidden="true">02</span>
+        <h3 class="tc-title">All-on-4 / All-on-6</h3>
+        <p class="tc-body">Fixed prosthetic solutions using four to six implants to support a complete arch. These protocols can often be completed with reduced surgical time and immediate provisional teeth.</p>
+      </article>
+      <article class="treatment-card reveal">
+        <span class="tc-num" aria-hidden="true">03</span>
+        <h3 class="tc-title">Complex Implant Reconstruction</h3>
+        <p class="tc-body">Surgical treatment for challenging cases including failed previous implants, severe bone loss, or anatomical complications requiring specialized surgical expertise.</p>
+      </article>
+      <article class="treatment-card reveal">
+        <span class="tc-num" aria-hidden="true">04</span>
+        <h3 class="tc-title">Bone Grafting</h3>
+        <p class="tc-body">Procedures to rebuild jawbone structure lost due to tooth extraction, disease, or trauma. Adequate bone volume is essential for successful long-term implant outcomes.</p>
+      </article>
+      <article class="treatment-card reveal">
+        <span class="tc-num" aria-hidden="true">05</span>
+        <h3 class="tc-title">Second Opinions</h3>
+        <p class="tc-body">Independent evaluation of existing treatment plans or assessment of cases deemed too complex. A fresh surgical perspective can clarify options and establish realistic expectations.</p>
+      </article>
+      <article class="treatment-card reveal" style="background: linear-gradient(135deg, var(--bg-panel), rgba(99,160,180,0.06)); border-color: var(--border-hi);">
+        <span class="tc-num" aria-hidden="true">→</span>
+        <h3 class="tc-title" style="color:var(--accent);">Not Sure Where to Start?</h3>
+        <p class="tc-body">Begin with a complimentary online consultation. Dr. Kopeliovich will review your case and recommend the most appropriate course of treatment.</p>
+        <a href="#consultation" class="btn-primary" style="display:inline-flex;margin-top:20px;font-size:.82rem;padding:10px 18px;">Start Here</a>
+      </article>
+    </div>
+  </div>
+</section>
 
-			<!-- Copyright -->
-			<div id="copyright">
-				<ul><li>&copy; Dr. Dan Kopeliovich</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-			</div>
+<!-- ===== WHY OMS ===== -->
+<section id="why-oms" class="section" aria-labelledby="oms-heading">
+  <div class="container">
+    <div class="section-label">Surgical Expertise</div>
+    <h2 class="section-h2" id="oms-heading">Why Choose an Oral &amp;<br><em>Maxillofacial Surgeon</em></h2>
+    <div class="oms-grid">
+      <div class="oms-list reveal">
+        <div class="oms-item">
+          <div class="oms-icon" aria-hidden="true">🦴</div>
+          <div>
+            <h4>Surgical Training in Bone &amp; Anatomy</h4>
+            <p>OMS surgeons complete years of hospital-based surgical residency focused specifically on the bones, nerves, and tissues of the face and jaws — the exact structures navigated during implant surgery.</p>
+          </div>
+        </div>
+        <div class="oms-item">
+          <div class="oms-icon" aria-hidden="true">⚙️</div>
+          <div>
+            <h4>Managing Complex Cases</h4>
+            <p>Advanced cases often involve insufficient bone, proximity to critical nerves or sinuses, or multiple coordinated surgical procedures. These require planning and execution that draws on specialized training.</p>
+          </div>
+        </div>
+        <div class="oms-item">
+          <div class="oms-icon" aria-hidden="true">🛡️</div>
+          <div>
+            <h4>Handling Complications</h4>
+            <p>Surgical complications, while uncommon, do occur. A surgeon trained for complex anatomical situations is better prepared to address unexpected findings and minimize risk.</p>
+          </div>
+        </div>
+        <div class="oms-item">
+          <div class="oms-icon" aria-hidden="true">🔭</div>
+          <div>
+            <h4>Reconstruction-Oriented Thinking</h4>
+            <p>Rather than simply placing implants, a reconstructive approach considers long-term function and stability of the entire jaw — especially important for patients with bone loss or previous failures.</p>
+          </div>
+        </div>
+      </div>
+      <div class="oms-callout reveal">
+        <blockquote>
+          "For straightforward implant cases, many qualified practitioners can provide excellent care. For complex cases, the additional surgical training of an oral and maxillofacial surgeon can make a meaningful difference in outcomes."
+        </blockquote>
+        <p style="margin-top:24px;font-size:.84rem;color:var(--text-muted);">If you have been told your case is complex, involves significant bone loss, or have had previous implant failures, a consultation with a surgical specialist is strongly recommended before proceeding.</p>
+        <a href="#consultation" class="btn-primary" style="display:inline-flex;margin-top:24px;">Request a Consultation</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-		</div>
+<!-- ===== PROCESS ===== -->
+<section id="process" class="section" aria-labelledby="process-heading">
+  <div class="container">
+    <div class="section-label">How It Works</div>
+    <h2 class="section-h2" id="process-heading">Treatment Process for<br><em>International Patients</em></h2>
+    <p class="section-lead">A clear, practical process designed for patients traveling from the US and Canada.</p>
+    <div class="process-steps reveal">
+      <div class="process-step">
+        <div class="step-circle" aria-label="Step 1">1</div>
+        <p class="step-title">Online Evaluation</p>
+        <p class="step-body">Submit your case information and any existing records for review. Dr. Kopeliovich will assess your situation and discuss candidacy, options, and estimated costs.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle" aria-label="Step 2">2</div>
+        <p class="step-title">Travel to Cancún</p>
+        <p class="step-body">Once a treatment plan is confirmed, coordinate your travel dates. Most patients arrange a stay of 3–10 days. We can provide guidance on accommodations and logistics.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle" aria-label="Step 3">3</div>
+        <p class="step-title">Procedure &amp; Treatment</p>
+        <p class="step-body">Your surgical procedure is performed at an affiliated private dental clinic in Cancún. Dr. Kopeliovich will walk you through each step and post-operative care before you leave.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle" aria-label="Step 4">4</div>
+        <p class="step-title">Healing &amp; Follow-Up</p>
+        <p class="step-body">Most patients return home within days. Dr. Kopeliovich remains available for remote follow-up. Some cases may require a second visit for final prosthetic work.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+<!-- ===== CONSULTATION ===== -->
+<section id="consultation" class="section" aria-labelledby="consult-heading">
+  <div class="container">
+    <div class="consult-grid">
+      <div class="consult-info reveal">
+        <div class="section-label">Free Consultation</div>
+        <h2 class="section-h2" id="consult-heading">Start with a<br><em>Free Evaluation</em></h2>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.75;margin-bottom:8px;">This complimentary consultation is for patients considering dental implants, full mouth reconstruction, or complex implant treatment in Cancún.</p>
+        <p style="font-size:.95rem;color:var(--text-muted);line-height:1.75;">During your consultation, Dr. Kopeliovich will:</p>
+        <ul>
+          <li>Review your case and any existing imaging or treatment plans</li>
+          <li>Discuss treatment options appropriate for your situation</li>
+          <li>Explain the travel and treatment process in detail</li>
+          <li>Answer your questions directly — no intermediaries</li>
+          <li>Provide preliminary cost estimates for your specific case</li>
+        </ul>
+        <div style="margin-top:32px;padding:20px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);">
+          <img src="https://kopidanny.github.io/drkopeliovich/images/shtern-logo.png"
+               alt="Affiliated Clinic Logo" loading="lazy" width="120" style="margin-bottom:10px;opacity:.8;">
+          <p style="font-size:.78rem;color:var(--text-dim);line-height:1.6;">Clinical procedures are performed at an affiliated private dental clinic in Cancún, equipped with modern surgical facilities.</p>
+        </div>
+      </div>
+      <div class="form-card reveal" role="form" aria-labelledby="form-title">
+        <p class="form-title" id="form-title">Free Implant Consultation</p>
+        <p class="form-sub">Answer 3 quick questions and we'll reach out to schedule your evaluation.</p>
+        <form id="consultForm" novalidate>
+          <!-- CSRF token placeholder — replace with server-side value -->
+          <input type="hidden" name="_csrf" value="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-fname">First Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-fname" name="firstName" required autocomplete="given-name" placeholder="Maria">
+            </div>
+            <div class="form-group">
+              <label for="f-lname">Last Name <span aria-hidden="true">*</span></label>
+              <input type="text" id="f-lname" name="lastName" required autocomplete="family-name" placeholder="Rodriguez">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="f-email" name="email" required autocomplete="email" placeholder="you@email.com">
+          </div>
+          <div class="form-group">
+            <label for="f-phone">Phone / WhatsApp</label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel" placeholder="+1 (555) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="f-treatment">What treatment are you interested in? <span aria-hidden="true">*</span></label>
+            <select id="f-treatment" name="treatment" required>
+              <option value="" disabled selected>Select an option…</option>
+              <option value="full-mouth">Full mouth dental implants</option>
+              <option value="multiple">Multiple implants</option>
+              <option value="reconstruction">Implant reconstruction / complex case</option>
+              <option value="second-opinion">Second opinion</option>
+              <option value="unsure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-evaluated">Have you already been evaluated by a dentist? <span aria-hidden="true">*</span></label>
+            <select id="f-evaluated" name="evaluated" required>
+              <option value="" disabled selected>Select an option…</option>
+              <option value="yes-plan">Yes, I already have a treatment plan</option>
+              <option value="yes-opinion">Yes, but I want a second opinion</option>
+              <option value="no">No, not yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-timing">When are you considering treatment? <span aria-hidden="true">*</span></label>
+            <select id="f-timing" name="timing" required>
+              <option value="" disabled selected>Select an option…</option>
+              <option value="1mo">Within 1 month</option>
+              <option value="3mo">1–3 months</option>
+              <option value="6mo">3–6 months</option>
+              <option value="research">Just researching</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit">
+            Request Free Consultation →
+          </button>
+          <p class="form-note">After submitting, you will be directed to schedule a time that works for you. Your information is handled in accordance with our <a href="privacy.html" style="color:var(--accent);">Aviso de Privacidad</a>.</p>
+        </form>
+        <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+          <p style="font-size:1.5rem;margin-bottom:8px;">✓</p>
+          <p>Thank you! We'll be in touch within one business day to schedule your evaluation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-		<!-- Qualification Form Handler -->
-		<script>
-		(function() {
-			// =============================================
-			// UPDATE THIS URL: Replace with your Calendly link
-			// =============================================
-			var CALENDLY_URL = 'https://calendly.com/YOUR-LINK';
+<!-- ===== HEALTH DISCLAIMER (SSA / NOM COMPLIANCE) ===== -->
+<div class="health-disclaimer" role="note" aria-label="Health services disclaimer">
+  <p>
+    <strong>Aviso de Servicios de Salud:</strong> Este servicio es responsabilidad del médico que lo practica.
+    Los procedimientos clínicos se realizan en una clínica dental privada afiliada en Cancún, Q. Roo, México.
+    Los resultados individuales pueden variar. Esta información es de carácter general y no sustituye una evaluación médica personalizada. ·
+    <strong>Health Disclaimer:</strong> Treatment outcomes vary by patient. Information presented is general in nature and does not constitute a diagnosis or treatment recommendation. A clinical evaluation is required before any procedure.
+  </p>
+</div>
 
-			var form = document.getElementById('qualification-form');
-			if (form) {
-				form.addEventListener('submit', function(e) {
-					e.preventDefault();
+<!-- ===== FOOTER ===== -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand-name">Dr. Dan Kopeliovich</p>
+        <p class="footer-brand-sub">MD, DMD · Oral &amp; Maxillofacial Surgeon<br>Advanced Dental Implants · Cancún, Mexico<br><br>US-trained specialist in full mouth reconstruction and complex implant surgery.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#why-cancun">Why Cancún</a></li>
+          <li><a href="#about">About Dr. Kopeliovich</a></li>
+          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#process">Patient Process</a></li>
+          <li><a href="#consultation">Free Consultation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal &amp; Compliance</h4>
+        <ul>
+          <li><a href="privacy.html">Aviso de Privacidad (LFPDPPP)</a></li>
+          <li><a href="privacy.html#arco">Derechos ARCO</a></li>
+          <li><a href="terms.html">Términos de Servicio</a></li>
+          <li><a href="mailto:privacidad@drkopeliovich.com">privacidad@drkopeliovich.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Dr. Dan Kopeliovich, MD, DMD · All rights reserved</p>
+      <p>Clinical procedures performed at an affiliated private dental clinic in Cancún · <a href="#consultation">Get a Free Consultation</a></p>
+    </div>
+  </div>
+</footer>
 
-					// Get form values
-					var treatment = document.getElementById('treatment-interest').value;
-					var evaluation = document.getElementById('prior-evaluation').value;
-					var timeline = document.getElementById('timeline').value;
+<!-- ===== PRIVACY CONSENT BANNER (LFPDPPP COMPLIANCE) ===== -->
+<div class="privacy-banner" id="privacyBanner" role="dialog" aria-label="Privacy consent" aria-live="polite">
+  <p>
+    Este sitio recopila información personal para fines de consulta médica. Al continuar, acepta nuestro
+    <a href="privacy.html">Aviso de Privacidad</a> de conformidad con la
+    <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong>.
+    Sus datos sensibles de salud serán tratados con confidencialidad.
+  </p>
+  <button class="pb-accept" id="pbAccept" aria-label="Accept privacy policy">Aceptar / Accept</button>
+  <button class="pb-decline" id="pbDecline" aria-label="Decline and close">Rechazar</button>
+</div>
 
-					// Validate
-					if (!treatment || !evaluation || !timeline) {
-						alert('Please answer all questions to continue.');
-						return;
-					}
+<script>
+  // ===== YEAR =====
+  document.getElementById('year').textContent = new Date().getFullYear();
 
-					// Optional: You can append form data as URL params if Calendly supports it
-					// var params = '?treatment=' + encodeURIComponent(treatment) +
-					//              '&evaluation=' + encodeURIComponent(evaluation) +
-					//              '&timeline=' + encodeURIComponent(timeline);
+  // ===== MOBILE MENU =====
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open);
+    mobileMenu.setAttribute('aria-hidden', !open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', false);
+      mobileMenu.setAttribute('aria-hidden', true);
+    });
+  });
 
-					// Redirect to Calendly
-					window.location.href = CALENDLY_URL;
-				});
-			}
-		})();
-		</script>
+  // ===== SCROLL REVEAL =====
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-	</body>
+  // ===== FORM (client-side validation) =====
+  document.getElementById('consultForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const required = this.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(field => {
+      field.style.borderColor = '';
+      if (!field.value.trim()) {
+        field.style.borderColor = 'var(--danger)';
+        valid = false;
+      }
+    });
+    if (!valid) return;
+    // Email format check
+    const email = document.getElementById('f-email');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+      email.style.borderColor = 'var(--danger)';
+      return;
+    }
+    // Show success (in production, replace with real form submission)
+    this.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  });
+
+  // ===== PRIVACY BANNER =====
+  const banner = document.getElementById('privacyBanner');
+  const accepted = localStorage.getItem('privacyAccepted');
+  if (accepted) banner.style.display = 'none';
+  document.getElementById('pbAccept').addEventListener('click', () => {
+    localStorage.setItem('privacyAccepted', '1');
+    banner.style.display = 'none';
+  });
+  document.getElementById('pbDecline').addEventListener('click', () => {
+    banner.style.display = 'none';
+  });
+
+  // ===== NAV SCROLL TINT =====
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('nav');
+    if (window.scrollY > 40) {
+      nav.style.background = 'rgba(10, 15, 26, 0.98)';
+    } else {
+      nav.style.background = 'rgba(10, 15, 26, 0.92)';
+    }
+  }, { passive: true });
+</script>
+</body>
 </html>
